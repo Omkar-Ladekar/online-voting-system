@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Voting System</title>
+    <link rel="stylesheet" href="voting.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Online Voting System</h1>
+        </header>
+
+        <!-- Voter Registration Form -->
+        <section id="registration">
+            <h2>Register to Vote</h2>
+            <form id="registrationForm">
+                <input type="text" id="voterId" placeholder="Enter Voter ID" required>
+                <button type="submit">Register</button>
+            </form>
+            <p id="registrationStatus"></p>
+        </section>
+
+        <!-- Cast Vote Form -->
+        <section id="voteSection">
+            <h2>Cast Your Vote</h2>
+            <form id="voteForm">
+                <label for="candidates">Choose a Candidate:</label>
+                <select id="candidates" name="BJP" required>
+                    <!-- Candidates will be populated here -->
+                </select>
+                <button type="submit">Vote</button>
+            </form>
+            <p id="voteStatus"></p>
+        </section>
+
+        <!-- Results Section -->
+        <section id="resultsSection">
+            <h2>Election Results</h2>
+            <button id="showResults">Show Results</button>
+            <div id="results"></div>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Online Voting System</p>
+        </footer>
+    </div>
+
+    <!-- <script src="voting.js"></script> -->
+    <script src="voting.js"></script>
+</body>
+</html>
